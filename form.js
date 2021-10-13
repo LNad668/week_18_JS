@@ -4,7 +4,7 @@ let errors=[];
 function checkValidity(input){
     let validity = input.validity;
     if(validity.valueMissing){
-        errors.push('Поле ' + input.pleceholder +' не заполнено');
+        errors.push('Поле ' + input.placeholder +' не заполнено');
     }
     if (validity.patternMismatch){
         errors.push('ytdthysq');
