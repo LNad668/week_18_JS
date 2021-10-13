@@ -19,7 +19,14 @@ document.querySelector('form').addEventListener('reset', (evt) => {
     readFromLocalStorage();
 })
 
-/*function saveToLocalStorage(
+function saveToLocalStorage(){
     let value= document.querySelectorAll('#name').value;
     localStorage.setItem('username',value)
-)*/
+}
+    
+function readFromLocalStorage(){
+    let username= localStorage.getItem('username');
+    document.querySelector('#name').value = username;
+}
+
+readFromLocalStorage();
